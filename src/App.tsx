@@ -8,6 +8,7 @@ function App() {
   return (
     <div>
       <NavBar />
+      <div style={{ height: "75vh" }}></div>
       <Footer />
     </div>
   );

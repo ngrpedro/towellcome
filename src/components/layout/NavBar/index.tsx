@@ -5,9 +5,7 @@ const index = (props: Props) => {
   return (
     <div className={styles.box}>
       <div className={styles.container}>
-        <div>
-          <h1>Logo</h1>
-        </div>
+        <h1>Wellcome</h1>
 
         <div>
           <ul>

@@ -3,8 +3,9 @@ import reactLogo from "./assets/react.svg";
 
 import NavBar from "./components/layout/NavBar";
 import Footer from "./components/layout/Footer";
-import Hero from "./sections/Hero";
 import Banner from "./components/Banner";
+import Hero from "./sections/Hero";
+import Partners from "./sections/Partners";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <div>
         <Hero />
         <Banner />
+        <Partners />
       </div>
-      <Footer />
     </div>
   );
 }

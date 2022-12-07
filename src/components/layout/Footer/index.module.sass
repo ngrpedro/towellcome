@@ -1,4 +1,32 @@
 @import '../../../styles/main.sass'
 
-.container
-    @extend .container
+.box
+    position: sticky
+    top: 0
+    left: 0
+    right: 0
+    background: #637de8
+    z-index: 1000
+    font-family: $font-roboto
+
+    .container
+        @extend .container
+
+        padding-top: 1rem
+        padding-bottom: 1rem
+
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        h1
+            font-size: calc(14px + 1vw)
+            font-weight: 800
+            color: #fff
+
+        ul
+            display: flex
+            list-style: none
+            align-items: center
+            justify-content: center
+            gap: 2rem

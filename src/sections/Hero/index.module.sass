@@ -1,0 +1,56 @@
+@import "../../styles/main.sass"
+
+.container
+    @extend .container
+
+    padding-top: 2rem
+    padding-block: 2rem
+
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 1.5rem
+    flex-direction: column
+    text-align: center
+
+    .texttohover
+        letter-spacing: 9px
+        line-height: 2rem
+        color: #505050
+        font-size: calc(16px + .2vw)
+        font-weight: 600
+
+    .main_text
+        font-family: $font-roboto
+        font-size: calc(20px + 2.8vw)
+        letter-spacing: -0.05em
+        line-height: 1.1
+        font-weight: 500
+        color: #444
+
+        span
+            background-image: linear-gradient(120deg, #e16bbd, #e16bbd)
+            background-repeat: no-repeat
+            background-size: 100% 0.4em
+            background-position: 0 88%
+            font-weight: inherit
+
+    .text
+        font-size: calc(14px + .45vw)
+        max-width: 700px
+        font-weight: 400
+        color: #868686
+        margin-top: 20px
+
+    .button
+        padding-top: 1rem
+        padding-bottom: 1rem
+        padding-left: 2rem
+        padding-right: 2rem
+        border-radius: 6px
+
+        background-color: #fff5ba
+        font-weight: 600
+        border: none
+
+        margin-top: 4rem

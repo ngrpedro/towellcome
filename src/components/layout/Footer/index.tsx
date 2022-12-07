@@ -1,9 +1,9 @@
-import React from "react";
+import styles from "./index.module.sass";
 
 type Props = {};
 
 const index = (props: Props) => {
-  return <div>footer</div>;
+  return <div className={styles.container}>footer</div>;
 };
 
 export default index;

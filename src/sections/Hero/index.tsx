@@ -1,5 +1,6 @@
 import styles from "./index.module.sass";
 import App from "./../../App";
+import { ArrowDown } from "phosphor-react";
 
 type Props = {};
 
@@ -20,7 +21,9 @@ const index = (props: Props) => {
         Repudiandae!
       </p>
 
-      <button className={styles.button}>Pesquisar</button>
+      <button className={styles.button}>
+        Pesquisar <ArrowDown size={14} />
+      </button>
     </div>
   );
 };

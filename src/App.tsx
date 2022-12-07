@@ -4,13 +4,15 @@ import reactLogo from "./assets/react.svg";
 import NavBar from "./components/layout/NavBar";
 import Footer from "./components/layout/Footer";
 import Hero from "./sections/Hero";
+import Banner from "./components/Banner";
 
 function App() {
   return (
     <div>
       <NavBar />
-      <div style={{ height: "75vh" }}>
+      <div>
         <Hero />
+        <Banner />
       </div>
       <Footer />
     </div>

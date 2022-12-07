@@ -43,6 +43,10 @@
         margin-top: 20px
 
     .button
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 1rem
         padding-top: 1rem
         padding-bottom: 1rem
         padding-left: 2rem
@@ -53,10 +57,21 @@
         font-weight: 600
         border: none
 
-        margin-top: 4rem
+        margin-top: 3rem
 
         transition: all 0.2s ease 0s
         cursor: pointer
+
+        animation: bounce 2s infinite
+
+        @keyframes bounce
+            0%, 100%
+                transform: translateY(-25%)
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1)
+
+            50%
+                transform: translateY(0)
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1)
 
         &:hover
             background-color: #f9e471

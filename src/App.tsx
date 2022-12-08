@@ -1,6 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-
 import NavBar from "./components/layout/NavBar";
 import Footer from "./components/layout/Footer";
 import Banner from "./components/Banner";
@@ -16,6 +13,7 @@ function App() {
         <Hero />
         <Banner />
         <Partners />
+        <ContactUs />
       </div>
       <Footer />
     </div>

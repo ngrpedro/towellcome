@@ -1,27 +1,90 @@
 @import "../../styles/main.sass"
 
-.container
-    @extend .container
+.box
+    position: relative
 
-.title
-    font-family: $font-roboto
-    font-weight: 700
-    font-size: calc(19.4px + 1.5vw)
-    margin-bottom: 20px
-    line-height: 1.1
-    color: #474747
+    .background
+        position: absolute
+        bottom: 0
+        inset: 0
+        width: 100%
+        height: auto
+        background-color: #637de8
+        clip-path: polygon(0 68%, 100% 0%, 100% 100%, 0% 100%)
+        z-index: -1
 
-.subtitle
-    font-size: 1.1em
-    line-height: 1.5
-    max-width: 30rem
-    color: #878787
+    .container
+        @extend .container
+        padding: 2rem
 
-.banner
-    margin-left: 2rem
-    margin-right: 2rem
-    width: 100%
-    position: absolute
-    top: 9rem
-    left: 50%
-    transform: translate(-50%)
+        @include md
+            padding: 5rem 30px
+
+        .content
+            background-color: white
+            display: flex
+            flex-direction: column
+            align-items: start
+            justify-content: center
+            padding: 2rem
+            max-width: 600px
+            box-shadow: 0px 0px 1px #a0a0a0
+            border-radius: 10px
+            gap: 2rem
+            max-width: 100%
+
+            @include md
+                adding: 3rem
+                flex-direction: row
+                align-items: center
+
+            .texts
+                max-width: 42rem
+
+                .title
+                    font-family: $font-roboto
+                    font-weight: 700
+                    font-size: calc(19.4px + 1.5vw)
+                    margin-bottom: 20px
+                    line-height: 1.3
+                    color: #474747
+
+                .subtitle
+                    font-size: 1.1em
+                    line-height: 1.5
+                    max-width: 30rem
+                    color: #878787
+
+            .button
+                display: flex
+                align-items: start
+                justify-content: start
+                width: 100%
+                flex-grow: 1
+
+                @include md
+                    align-items: center
+                    justify-content: center
+
+                button
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    gap: 1rem
+                    padding-top: 1rem
+                    padding-bottom: 1rem
+                    padding-left: 2rem
+                    padding-right: 2rem
+                    border-radius: 6px
+
+                    background-color: #fff5ba
+                    font-weight: 700
+                    color: $color-body-text
+                    border: nones
+
+                    transition: all 0.2s ease 0s
+                    cursor: pointer
+
+                    &:hover
+                        background-color: #f9e471
+                        box-shadow: 2px 2px 4px #ccc

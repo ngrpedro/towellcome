@@ -18,11 +18,11 @@ const index = (props: Props) => {
           </div>
 
           <div className={styles.starts}>
-            <Star size={22} />
-            <Star size={22} />
-            <Star size={22} />
-            <Star size={22} />
-            <Star size={22} />
+            <Star size={18} />
+            <Star size={18} />
+            <Star size={18} />
+            <Star size={18} />
+            <Star size={18} />
           </div>
 
           <div className={styles.tags}>

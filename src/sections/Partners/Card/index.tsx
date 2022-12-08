@@ -1,5 +1,5 @@
 import styles from "./index.module.sass";
-import { ArrowRight } from "phosphor-react";
+import { ArrowRight, Star, User } from "phosphor-react";
 
 type Props = {};
 
@@ -7,14 +7,40 @@ const index = (props: Props) => {
   return (
     <div className={styles.box}>
       <div className={styles.cardHeader}>
-        <h1 className={styles.name}>Pietro Ramos</h1>
+        <div className={styles.avatar}>
+          <User size={55} />
+        </div>
 
-        <p className={styles.area}>Piscólogo</p>
+        <div className={styles.headerContent}>
+          <div className={styles.headerMain}>
+            <h1 className={styles.name}>Pietro Ramos</h1>
+            <p className={styles.area}>Piscólogo</p>
+          </div>
+
+          <div className={styles.starts}>
+            <Star size={22} />
+            <Star size={22} />
+            <Star size={22} />
+            <Star size={22} />
+            <Star size={22} />
+          </div>
+
+          <div className={styles.tags}>
+            <span>Homens Trans</span>
+            <span>LGBTQIAP+</span>
+          </div>
+        </div>
       </div>
-      <span className={styles.city}>Araçatuba</span>
+
+      <span className={styles.bio}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione
+        minus deserunt eum quo aut reiciendis veniam saepe temporibus,
+        cupiditate exercitationem. Delectus ducimus nesciunt nisi obcaecati
+        tenetur est repellendus culpa!
+      </span>
 
       <button className={styles.button}>
-        Contato
+        Saber mais
         <ArrowRight size={18} />
       </button>
     </div>

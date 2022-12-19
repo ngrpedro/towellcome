@@ -1,7 +1,12 @@
-import React from "react";
+import Breadcrumb from "../../components/Breadcrumb";
+import styles from "./index.module.sass";
 
 const index = () => {
-  return <div>Partner Profile</div>;
+  return (
+    <div className={styles.container}>
+      <Breadcrumb>Profile user</Breadcrumb>
+    </div>
+  );
 };
 
 export default index;

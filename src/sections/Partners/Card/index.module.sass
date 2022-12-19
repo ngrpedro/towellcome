@@ -2,8 +2,8 @@
 
 .box
     border-radius: 10px
-    box-shadow: 2px 2px 4px #ccc
-    padding: 1.5rem
+    padding: 2rem
+    border: 1px solid #ececec
 
     display: flex
     align-items: start
@@ -15,7 +15,8 @@
         align-items: end
 
     &:hover
-        transform: scale(1.05)
+        box-shadow: 2px 2px 11px #e1e1e1
+        //transform: scale(1.05)
 
     .cardHeader
         display: flex
@@ -58,12 +59,13 @@
                     font-family: $font-roboto
 
                 .area
-                    font-size: 14px
+                    font-size: 12px
+                    font-weight: 500
                     background-color: #ffdbf5
                     border: 1px solid #f30eb3
                     color: #f30eb3
                     padding: 6px 12px
-                    border-radius: 4px
+                    border-radius: 999px
 
             .starts
                 display: flex
@@ -78,7 +80,7 @@
 
                 span
                     display: block
-                    font-size: 14px
+                    font-size: 12px
                     background-color: #ebeaea
                     padding: 6px 14px
                     border-radius: 4px

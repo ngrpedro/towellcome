@@ -1,5 +1,6 @@
 import styles from "./index.module.sass";
 import { ArrowRight, Star, User } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -38,11 +39,12 @@ const index = (props: Props) => {
         cupiditate exercitationem. Delectus ducimus nesciunt nisi obcaecati
         tenetur est repellendus culpa!
       </span>
-
-      <button className={styles.button}>
-        Saber mais
-        <ArrowRight size={18} />
-      </button>
+      <Link to="/partnerProfile/:id">
+        <button className={styles.button}>
+          Saber mais
+          <ArrowRight size={18} />
+        </button>
+      </Link>
     </div>
   );
 };
